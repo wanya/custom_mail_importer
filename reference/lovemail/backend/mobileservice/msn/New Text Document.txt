@@ -1,0 +1,2 @@
+https://apps.dev.microsoft.com/#/application/4ca8fd94-db42-4ac8-b1eb-b189345e72f6
+https://dev.outlook.com/restapi/tutorial/php

@@ -1,0 +1,49 @@
+intComex
+
+Amazon
+gian@mycomputer-aruba.com
+Mycomputer@852!
+
+gmail to get data on ( currently not on) 
+mycomputerinvoice@gmail.com
+Action1234
+
+
+AWS dev User
+username: dev
+Access Key ID: AKIAIHO7ARG5AGPH52RA
+Secret Access Key: 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
+Password: d9QGDBnVfz@Z!
+
+
+Amazon instance
+
+
+Access Key ID: AKIAIMOW3UK6PSCWCWVA
+Secret Access Key: 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
+
+instance name :  intcomex-techdata-ami
+instance id : i-02b314f785c7d6f4d
+instance public dns : Public DNS (IPv4)   : ec2-52-32-1-31.us-west-2.compute.amazonaws.com
+key pair : intcomex-techdata.pem (intcomex project directory/AWS-Configure/)
+
+
+connection instruction
+ssh -v -i mail-scraper.pem ec2-user@ec2-52-32-1-31.us-west-2.compute.amazonaws.com
+
+server public ip: 52.36.183.34
+
+SFTP
+host: ec2-52-32-1-31.us-west-2.compute.amazonaws.com
+username: c2-user
+key file:  mail-scraper.pem
+
+
+— phpMyadmin
+http://ec2-52-32-1-31.us-west-2.compute.amazonaws.com/phpmyadmin/
+root
+root
+
+VeryPDF account
+wanyab87
+ChF9RADmQ0Fe

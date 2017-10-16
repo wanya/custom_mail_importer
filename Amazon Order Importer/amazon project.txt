@@ -1,0 +1,25 @@
+Amazon Order Import
+
+
+Milestone: 
+1. upfront 300
+2. mail parser and parse CSV : 600
+3. importDB and error handling :
+4. deployment and bug fix : 100 
+
+Amazon server 
+— AWS instance info
+ec2-35-164-238-86.us-west-2.compute.amazonaws.com
+
+ssh -i "amazon-order-importer.pem" ec2-user@ec2-35-164-238-86.us-west-2.compute.amazonaws.com
+
+
+— Google API key
+Client ID	298458107943-r15vddm5nnqgvukt29evcmjk4ehn5kvr.apps.googleusercontent.com
+Client secret	bGkik5a-uQb0dpzSD5ifGYt8
+
+— DB info
+root/ root
+db: amazon-order
+http://ec2-35-164-238-86.us-west-2.compute.amazonaws.com/phpmyadmin
+

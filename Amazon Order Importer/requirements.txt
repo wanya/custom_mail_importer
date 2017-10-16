@@ -1,0 +1,53 @@
+
+We would want to send you our Amazon order summary for the past 7 days once a week. Reports should be able to overlap, for instance if I send you the order summary for the days 020317-021217 and then if I send you one 3 days later for the days 020817-021517 you should only process the orders you haven’t processed already.
+ 
+Only orders with Order Status (Column K) = “Closed” should be processed.
+ 
+In 020817-021517_highlighted I have highlighted all the orders that belong together. They have the same order id (column B).
+ 
+The fields that we need are:
+ 
+Column A, B, D, F, G, H, I, J, AK, AL, AP, AQ
+ 
+There are sometimes errors. Order 113-3586097-4453824 on date 2/14/2017 should be:
+ 
+5 x HP 25er 25-in IPS LED Backlit Monitor @ $184.00 which would equal $920.00
+ 
+But if you add up Column AQ (Item Quantity) the total item quantity would total 8.
+ 
+In orders where the sum of column AR (Item Subtotal) does not equal column F (Order Subtotal) you should generate an XML file that just gives us Order ID and an error code.
+
+
+
+This is for us to control what amazon is billing us. In a separate table we would need the following fields:
+
+ 
+
+A, B, J, T, U, V
+
+ 
+
+Usually orders are processed with one payment:
+
+ 
+
+For order 113-4556992-6505848 we were billed $1,189.80 (V) and it had the reference W5POAR0GRFXD (T)
+
+ 
+
+But sometimes one order is processed with multiple payments:
+
+ 
+
+order 113-6482944-2704216 was processed with two payments:
+
+ 
+
+FY8W6E0EJG4M for  $1,406.76
+
+FY8RT7UO87FM for  $1,199.38
+
+                                                                                                                       
+
+The table should display the order id and the corresponding payments.
+

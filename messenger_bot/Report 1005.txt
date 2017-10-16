@@ -1,0 +1,35 @@
+— start sequence
+	done
+— Get started
+	done
+— Deals
+	need to check
+— Our location
+	done
+— Opening hours
+	done
+— Persistant Menu
+	need to adjust
+— Technical Help
+	adjust sub functions
+— Help Sequence
+	adjust
+— Text Sequence type
+	need to adjust
+— chat to a human
+	need to adjust
+— show commands
+	need to adjust
+— products
+	it’s bad and need to rebuild
+— search sequence
+	rebuild
+— goodbye
+	not yet
+— quote sequence
+	need to build
+— emoji
+	need to check all and adjust
+— Amazon AI
+	need to dev
+— Guide Doc	
