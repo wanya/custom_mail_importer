@@ -35,6 +35,42 @@ class Items extends CI_Model
 		return NULL;
 	}
 
+	function getAllItems()
+	{
+		$this->db->select( "*");
+		$this->db->from('order_items');
+		$this->db->order_by('AddDate');
+		
+		$query = $this->db->get();
+		
+		if($query->num_rows() > 0)
+		{
+			$rows = $query->result();
+
+			return array( "data"=> $rows );
+		}
+	}
+
+	function getItemByID( $itemID )
+	{
+		$this->db->from( "order_items" );
+		$this->db->where( "id={$itemID}" );
+		$query = $this->db->get();
+
+		if ($query->num_rows() > 0) {
+			$rows = $query->result();
+				return $rows[0];
+		}
+
+		return NULL;
+	}
+
+	function deleteAll()
+	{
+		$this->db->empty_table('order_items');
+		return true;
+	}
+
 }
 
 ?>

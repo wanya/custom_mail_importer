@@ -45,6 +45,28 @@ class Orders extends CI_Model
 
 		return $this->db->update('orders');
 	}
+
+	function getAllOrders()
+	{
+		$this->db->select( "*");
+		$this->db->from('orders');
+		$this->db->order_by('AddDate');
+		
+		$query = $this->db->get();
+		
+		if($query->num_rows() > 0)
+		{
+			$rows = $query->result();
+
+			return array( "data"=> $rows );
+		}
+	}
+
+	function deleteAll()
+	{
+		$this->db->empty_table('orders');
+		return true;
+	}
 }
 
 ?>
